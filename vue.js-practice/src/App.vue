@@ -1,23 +1,22 @@
+<!--HTML-->
 <template>
 <div>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Home/>
+  <Header/>
+  <TaskTable/>
 </div> 
 </template>
 
+<!--JavaScript-->
 <script>
-import Home from './components/Home.vue'
+import Header from './components/Header.vue'
+import TaskTable from './components/TaskTable.vue'
 
 export default {
   name: 'App',
-  data () {
-    return{
-      api_key: 'd5e4d419a18fabbf6f39acd494c88391'
-    }
-  },
   components: {
-    Home
-  }
+    Header,
+    TaskTable
+}
 }
 </script>
 
